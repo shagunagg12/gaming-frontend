@@ -1,0 +1,462 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.metrophobic-regular {
+  font-family: "Metrophobic", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+:root {
+  
+  font-family: "Nunito Sans", sans-serif;
+  font-style: normal;
+  color: #f3eded;
+  color-scheme: white;
+
+  background-color: #092420;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.primaryTextColor{
+color: #9cbad3;
+}
+.secondaryTextColor{
+  color: #becfdd;
+}
+.iconColor{
+  color: #b1bad3;
+}
+.bgImage{
+  position: relative; 
+  
+   ;
+ }
+ .bgImage::before{
+   content: '';
+   background-image: url('../src/assets/images/casinobg.jpg');
+   
+   background-size: cover;
+   position: absolute;
+   top: 0px;
+   right: 0px;
+   bottom: 0px;
+   left: 0px;
+   opacity: 0.20;
+   z-index: -1;
+ }
+ .tableheader {
+   
+    height: 50px;
+    font-size: small;
+   text-align: left;
+   padding: 8px;
+  display: flex;
+   color: #b1bad3;
+   align-items: center;
+   justify-content: space-between;
+  
+ }
+ .td {
+
+  height: 50px;
+  font-size:14px;
+  font-weight: 700;
+
+  background-color: #0F212E;
+  text-align: left;
+  padding: 8px;
+}
+.triangle-up {
+  @apply w-0 h-0 border-l-[8px] border-r-[8px] border-b-[8px]  border-transparent border-b-white;
+}
+
+/* customScrollbar.css */
+/* .custom-scrollbar::-webkit-scrollbar {
+  width: 12px;
+}
+
+.custom-scrollbarp::-webkit-scrollbar-track {
+  background: #ffffff;
+  padding: 4px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background-color: #24404d;
+  border-radius: 10px;
+  border: 3px solid #ffffff;
+} */
+
+
+html {
+  /* scrollbar-width: thin; For Firefox */
+  /* scrollbar-color: #192e38 #24404d; For Firefox */
+
+}
+
+body::-webkit-scrollbar {
+  display:none;
+}
+
+body::-webkit-scrollbar-track {
+  background: #24404d;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #24404d;
+  border-radius: 10px;
+  border: 2px solid#24404d;
+}
+@keyframes loading-animation {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(350%);
+  }
+}
+
+.loading {
+  animation: loading-animation .29s  infinite   ease-in-out  alternate;
+}
+
+.tooltip {
+  @apply invisible absolute;
+}
+
+.has-tooltip:hover .tooltip {
+  @apply visible z-50;
+}
+
+.example::-webkit-scrollbar {
+  display: none;
+}
+
+
+/* The container for the loading line */
+.loading-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* The line where the ball moves */
+.line {
+  width: 80px; /* Line width */
+  height: 10px; /* Line height */
+  background-color: #2f4553;
+  position: relative;
+  overflow: hidden;
+  border-radius: 5px;
+}
+
+/* The ball that moves left to right */
+.ball {
+  width: 14px; /* Ball size */
+  height: 10px;
+  background-color: #d6dee6;
+  border-radius: 50%;
+  position: absolute;
+  animation: move 0.4s infinite ease-in-out;
+}
+
+/* Animation for the ball's movement */
+@keyframes move {
+  0% {
+    left: 0;
+  }
+  50% {
+    left: 90px; /* Moves to the right end of the line */
+  }
+  100% {
+    left: 0; /* Moves back to the left end of the line */
+  }
+}
+
+/* HTML: <div class="loader"></div> */
+.loader {
+  color: #ffffff;
+  width: 4px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  box-shadow: 19px 0 0 7px, 38px 0 0 3px, 57px 0 0 0;
+  transform: translateX(-38px);
+  animation: l21 .3s infinite alternate linear;
+}
+
+@keyframes l21 {
+  50%  {box-shadow: 19px 0 0 3px, 38px 0 0 7px, 57px 0 0 3px}
+  100% {box-shadow: 19px 0 0 0  , 38px 0 0 3px, 57px 0 0 7px}
+}
+
+/* Main container */
+.background-div {
+  position: relative;
+  width: 100%;
+  height: auto;
+  background: linear-gradient(135deg, #0b3d24, #116530 70%);
+  overflow: hidden;
+}
+
+/* Large Faint Green Box */
+.background-div::before {
+  content: '';
+  position: absolute;
+  top: 20%;
+  left: 10%;
+  width: 300px;
+  height: 300px;
+  background: rgba(34, 139, 34, 0.2);
+  border-radius: 15px;
+  transform: rotate(15deg);
+  z-index: 1;
+  animation: boxMove1 10s infinite alternate;
+}
+
+/* Diagonal Transparent Strip */
+.background-div::after {
+  content: '';
+  position: absolute;
+  top: 10%;
+  left: 0;
+  width: 150%;
+  height: 50%;
+  background: linear-gradient(135deg, rgba(15, 70, 25, 0.3), rgba(0, 50, 15, 0.2));
+  clip-path: polygon(0% 20%, 100% 10%, 100% 80%, 0% 90%);
+  z-index: 4;
+  animation: waveMove 8s infinite ease-in-out alternate;
+}
+
+/* Bright Green Small Square */
+.small-box {
+  position: absolute;
+  top: 60%;
+  left: 30%;
+  width: 150px;
+  height: 150px;
+  background: rgba(50, 200, 50, 0.5);
+  border-radius: 8px;
+  z-index: 3;
+  animation: boxMove3 12s infinite alternate-reverse;
+}
+
+/* Thin Vertical Rectangle */
+.vertical-rectangle {
+  position: absolute;
+  bottom: 20%;
+  left: 40%;
+  width: 80px;
+  height: 300px;
+  background: rgba(30, 120, 30, 0.4);
+  z-index: 5;
+  animation: boxMove4 6s infinite alternate;
+}
+
+/* Overlapping Bright Boxes */
+.overlapping-box {
+  position: absolute;
+  top: 40%;
+  right: 25%;
+  width: 200px;
+  height: 200px;
+  background: rgba(60, 180, 60, 0.3);
+  border-radius: 12px;
+  z-index: 6;
+  animation: boxMove5 14s infinite alternate;
+}
+
+/* Rotating Circle */
+.rotating-circle {
+  position: absolute;
+  bottom: 10%;
+  left: 15%;
+  width: 200px;
+  height: 200px;
+  background: rgba(100, 255, 100, 0.3);
+  border-radius: 50%;
+  z-index: 2;
+  animation: rotateCircle 18s infinite linear;
+}
+
+/* Pulsating Dot Pattern */
+.pulsating-dot {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 20px;
+  height: 20px;
+  background: rgba(80, 200, 80, 0.8);
+  border-radius: 50%;
+  z-index: 7;
+  animation: pulse 5s infinite alternate;
+}
+
+/* Floating Triangles */
+.floating-triangle {
+  position: absolute;
+  top: 30%;
+  right: 10%;
+  width: 0;
+  height: 0;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  border-bottom: 100px solid rgba(80, 220, 80, 0.4);
+  z-index: 3;
+  animation: float 8s infinite alternate;
+}
+
+/* Keyframes for Animations */
+@keyframes boxMove1 {
+  0% {
+    transform: rotate(15deg) translateY(0);
+  }
+  100% {
+    transform: rotate(15deg) translateY(-20px);
+  }
+}
+
+@keyframes waveMove {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-30px);
+  }
+}
+
+@keyframes boxMove3 {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(20px);
+  }
+}
+
+@keyframes boxMove4 {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.1);
+  }
+}
+
+@keyframes boxMove5 {
+  0% {
+    transform: translateY(0) rotate(0deg);
+  }
+  100% {
+    transform: translateY(-10px) rotate(5deg);
+  }
+}
+
+@keyframes rotateCircle {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1.5);
+    opacity: 0.6;
+  }
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-15px);
+  }
+}
+
+.border-gradient {
+  background: linear-gradient(
+    to right,
+    rgba(255, 0, 0, 0.8), /* Starting color */
+    rgba(255, 0, 0, 0.2), /* Fading color */
+    transparent /* Fully transparent */
+  );
+  height: 2px; /* Adjust thickness */
+  border-radius: 10px 10px 0 0; /* Rounded corners at top */
+}
+
+.loader-spinner {
+  width: 50px;
+  padding: 8px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background: #25b09b;
+  --_m: 
+    conic-gradient(#0000 10%,#000),
+    linear-gradient(#000 0 0) content-box;
+  -webkit-mask: var(--_m);
+          mask: var(--_m);
+  -webkit-mask-composite: source-out;
+          mask-composite: subtract;
+  animation: l3 1s infinite linear;
+}
+
+/* Add this to your global CSS or Tailwind CSS file */
+@keyframes shimmer {
+  0% {
+    background-position: -200% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}
+
+.shimmer-effect {
+  background: linear-gradient(
+    90deg,
+    #aaaabcd7 25%,
+    #e0e0e0 50%,
+    #aaaabcd7 75%
+  );
+  background-size: 200% 100%;
+  animation: shimmer 1.5s infinite;
+}
+
+
+/* HTML: <div class="loader"></div> */
+.loaderDots {
+  width: 60px;
+  aspect-ratio: 4;
+  --_g: no-repeat radial-gradient(circle closest-side,#000 90%,#0000);
+  background: 
+    var(--_g) 0%   50%,
+    var(--_g) 50%  50%,
+    var(--_g) 100% 50%;
+  background-size: calc(100%/3) 100%;
+  animation: l7 1s infinite linear;
+}
+@keyframes l7 {
+    33%{background-size:calc(100%/3) 0%  ,calc(100%/3) 100%,calc(100%/3) 100%}
+    50%{background-size:calc(100%/3) 100%,calc(100%/3) 0%  ,calc(100%/3) 100%}
+    66%{background-size:calc(100%/3) 100%,calc(100%/3) 100%,calc(100%/3) 0%  }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+@keyframes l3 {to{transform: rotate(1turn)}}
+
+

@@ -1,0 +1,1023 @@
+.dashboardPage {
+    background-color: #f5f4f1;
+    user-select: none;
+    min-height: calc(100vh - 56px);
+
+    .aviatorbannerShow {
+        margin-top: 5px;
+        padding-top: 11px;
+        border-top: 1px solid #2929291a;
+        display: flex;
+        justify-content: space-between;
+
+        .showBanner {
+            position: relative;
+            margin-left: 10px;
+            margin-right: 10px;
+            max-width: 425px;
+
+            img {
+                border-radius: 10px;
+                max-width: 425px;
+                min-height: 212px;
+                height: 100%;
+                width: 100%;
+            }
+
+            button {
+                position: absolute;
+                right: 10%;
+                bottom: 16%;
+                background: rgb(255 255 255 / 20%);
+                border: 1px solid yellow;
+                color: white;
+                font-weight: 400;
+                border-radius: 4px;
+                font-size: 13px;
+                padding: 6px 13px;
+
+                &:hover {
+                    background: rgba(255, 255, 255, 0.299);
+                }
+            }
+        }
+    }
+}
+
+.navbarDash {
+    height: 56px;
+    position: sticky;
+    top: 0;
+    z-index: 111;
+    display: block;
+
+    .headerShow {
+        background: #171716;
+        display: flex;
+        width: 100%;
+        position: relative;
+        height: 100%;
+        align-items: center;
+        padding: 0px 10px;
+        justify-content: space-between;
+
+        .showMobHistoryBtn {
+            display: none !important;
+        }
+
+        .logoShow {
+            img {
+                width: 80px;
+            }
+        }
+
+        .centerHead {
+            h6 {
+                color: rgb(184, 179, 179);
+                text-transform: uppercase;
+                cursor: pointer;
+                font-size: 13px;
+                margin: 0px;
+            }
+        }
+
+        .rightHead {
+            display: flex;
+
+            img {
+                width: 24px;
+                margin-right: 10px;
+            }
+
+            .loginInButton {
+                background-color: #ffffff;
+                padding: 4px 9px;
+                cursor: pointer;
+                color: #292621;
+                font-size: 13px;
+                font-weight: 600;
+                border: none;
+                border-radius: 14px;
+                margin: 0px 3px;
+
+                &:hover {
+                    background-color: #efede9;
+                }
+            }
+
+            .balanceShow {
+                background-color: #008f5f;
+                position: relative;
+                display: flex;
+                align-items: center;
+                color: white;
+                border-radius: 6px;
+                margin-right: 5px;
+                padding: 2px 15px;
+                user-select: none;
+
+                span {
+                    font-size: 14px;
+                }
+
+                button {
+                    background-color: transparent;
+                    padding: 0px;
+                    display: flex;
+                    align-items: center;
+                    margin-left: 10px;
+                    border: none;
+
+                    i {
+                        font-size: 12px;
+                        color: white;
+                    }
+                }
+            }
+
+            .profileIcon {
+                background-color: transparent;
+                border-radius: 50%;
+                margin: 0px 5px;
+                border: 1px solid #9f9494;
+
+                i {
+                    color: #9f9494;
+                }
+            }
+
+            .signInButton {
+                background-color: #008f5f;
+                padding: 4px 9px;
+                cursor: pointer;
+                color: white;
+                // color: #292621;
+                font-size: 13px;
+                font-weight: 600;
+                border: none;
+                border-radius: 14px;
+                margin: 0px 3px;
+
+                &:hover {
+                    background-color: #009e69;
+                }
+            }
+        }
+    }
+
+}
+
+.nav-mob {
+    display: none;
+}
+
+.footerPage {
+    position: absolute;
+    width: 100%;
+    bottom: 6px;
+
+    .paymentMethod {
+        padding-top: 13px;
+        display: flex;
+        align-items: center;
+        border-top: 1px solid #2929291a;
+        border-bottom: 1px solid #2929291a;
+
+        h6 {
+            color: #26231e;
+            margin-left: 10px;
+            font-size: 13px;
+        }
+
+        .paymentShow {
+            display: flex;
+            align-items: center;
+            margin-left: 10px;
+            margin-top: -10px;
+
+            img {
+                margin: 0px 10px;
+            }
+
+            .razorPayLogo {
+                width: 86px;
+            }
+
+            .bankLogo {
+                width: 40px;
+
+            }
+
+            .googlePayLogo {
+                width: 50px;
+
+            }
+
+            .bheemLogo {
+                width: 30px;
+
+            }
+        }
+    }
+}
+
+.signUpPage {
+    background-color: #ffffff;
+
+    .signUpTop {
+        border-bottom: 1px solid #e9e9e9;
+        position: relative;
+        display: flex;
+        padding: 10px;
+
+        i {
+            cursor: pointer;
+        }
+
+        h6 {
+            text-align: center;
+            width: 100%;
+            margin-bottom: 0px;
+        }
+    }
+
+    .forgotPassword {
+        color: #009e69;
+        font-size: 13px;
+        font-weight: 600;
+        padding: 10px 0px;
+        margin: 0px;
+    }
+
+    .formSignUp {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        padding-top: 24px;
+        height: auto;
+        padding-bottom: 24px;
+
+        form {
+            width: 100%;
+            max-width: 560px;
+            padding: 10px;
+            // min-height: calc(100vh - 44px);
+            border-radius: 12px;
+            border: 1px solid #e5e4de;
+            background-color: #ffffff;
+
+            .titleHeadGame {
+                font-size: 16px;
+                margin: 10px 0px;
+                text-align: center;
+                color: red;
+                font-weight: 700;
+                padding-bottom: 10px;
+            }
+
+            .errorMessage {
+                font-size: 10px;
+                color: red;
+            }
+
+            .numberInput {
+                img {
+                    background-color: #ffffff;
+                    padding-left: 10px;
+                    padding-right: 10px;
+                    border-radius: 4px;
+                    font-size: 14px;
+                    padding-top: 6px;
+                    margin-right: 10px;
+                    padding-bottom: 6px;
+                    border: 1px solid #e6e3de;
+                }
+
+                display: flex;
+                display: flex;
+                align-items: center;
+
+                .showInput {
+                    width: 100%;
+
+                    input::-webkit-outer-spin-button,
+                    input::-webkit-inner-spin-button {
+                        -webkit-appearance: none;
+                        margin: 0;
+                    }
+
+                    /* Firefox */
+                    input[type=number] {
+                        -moz-appearance: textfield;
+                    }
+
+                    input {
+                        border: 1px solid #e6e3de;
+                        padding-left: 10px;
+                        padding-right: 10px;
+                        padding-bottom: 6px;
+                        width: 100%;
+                        border-radius: 4px;
+                        padding-top: 6px;
+                        background-color: #ffffff;
+
+                        &:focus {
+                            border: 1px solid #424242;
+                            outline: none;
+                        }
+                    }
+                }
+            }
+
+            .showInputPassword {
+                width: 100%;
+                margin-top: 10px;
+
+                input::-webkit-outer-spin-button,
+                input::-webkit-inner-spin-button {
+                    -webkit-appearance: none;
+                    margin: 0;
+                }
+
+                /* Firefox */
+                input[type=number] {
+                    -moz-appearance: textfield;
+                }
+
+                input {
+                    border: 1px solid #e6e3de;
+                    padding-left: 10px;
+                    padding-right: 10px;
+                    padding-bottom: 6px;
+                    width: 100%;
+                    border-radius: 4px;
+                    padding-top: 6px;
+                    background-color: #ffffff;
+
+                    &:focus {
+                        border: 1px solid #424242;
+                        outline: none;
+                    }
+                }
+            }
+
+            .showDescreption {
+                background-color: #f5f4f1;
+                display: flex;
+                margin: 20px 0px;
+                align-items: center;
+                border-radius: 10px;
+                padding: 10px;
+
+                span {
+                    font-size: 13px;
+                }
+
+                input {
+                    font-size: 13px;
+                    cursor: pointer;
+                }
+            }
+
+            .buttonSignUp {
+                background-color: #008f5f;
+                width: 100%;
+                height: 43px;
+                border-radius: 8px;
+                padding: 8px 16px;
+                box-shadow: 0px 4px 12px 0px rgba(0, 0, 0, 0);
+                font-size: 14px;
+                color: white;
+                border: 1px solid #008f5f;
+
+                &:hover {
+                    background-color: #009e69;
+                }
+            }
+        }
+    }
+}
+
+.profilePage {
+    background-color: #f5f4f1;
+    // height: calc(100vh - 56px);
+
+    .showProfile {
+        margin: 10px 0px;
+        padding: 16px 16px;
+        border-radius: 10px;
+        background-color: white;
+
+        .profileHead {
+            border-bottom: 1px solid #2929291a;
+            padding-bottom: 13px;
+            display: flex;
+            flex-direction: row-reverse;
+            justify-content: center;
+            align-items: center;
+
+            h6 {
+                text-align: center;
+                color: #009e69;
+                margin: 0px;
+                font-size: 18px;
+                font-weight: 700;
+                margin-left: 8px;
+            }
+
+            i {
+                color: #009e69;
+                font-size: 18px;
+            }
+        }
+
+        .balanceShow {
+            background-color: #f5f4f1;
+            display: flex;
+            padding: 10px;
+            margin: 10px 0px;
+            border-radius: 10px;
+
+            .walleteIcon {
+                margin-left: 6px;
+
+                i {
+                    color: #009e69;
+                }
+            }
+
+            .showDetail {
+                margin-left: 18px;
+
+                .balanceAmount {
+
+                    h6 {
+                        color: #7b756b;
+                        font-size: 12px;
+
+                        span {
+                            font-weight: 600;
+                            font-size: 13px;
+                            color: #171716;
+                        }
+                    }
+                }
+
+                .showBalanceButton {
+                    margin-top: 16px;
+
+                    button {
+                        border-radius: 28px;
+                        border: none;
+                        font-size: 12px;
+                        margin: 0px 10px;
+                        padding: 6px 10px;
+
+                        i {
+                            margin-right: 6px;
+                        }
+                    }
+
+                    .depositBtn {
+                        color: white;
+                        margin-left: 0px !important;
+                        background-color: #009e69;
+
+                        &:hover {
+                            background-color: #008f5f;
+                        }
+                    }
+
+                    .withdrawBtn {
+                        color: #171716;
+                        background-color: white;
+
+                        &:hover {
+                            background-color: #efede9;
+                        }
+                    }
+                }
+            }
+        }
+
+        .profileDetailShow {
+            background-color: #f5f4f1;
+            padding: 10px;
+            margin: 10px 0px;
+            border-radius: 10px;
+            border-top: 1px solid rgba(41, 41, 41, 0.1019607843);
+
+            .showData {
+                margin-left: 6px;
+
+                ul {
+                    list-style-type: none;
+                    list-style-type: none;
+                    margin: 0px;
+                    padding: 0px;
+
+                    .showNameProfile {
+                        display: flex;
+                        align-items: center;
+                        padding: 10px 0px;
+                        border-bottom: 1px solid rgba(41, 41, 41, 0.1019607843);
+
+                        h5 {
+                            margin: 0px;
+                            font-size: 14px;
+                            min-width: 100px;
+                        }
+
+                        h4 {
+                            margin: 0px;
+                            color: #7b756b;
+                            margin-left: 16px !important;
+                            font-size: 14px;
+
+                        }
+                    }
+                }
+            }
+        }
+
+        .logOutShow {
+            background-color: #f5f4f1;
+            padding: 10px;
+            margin: 10px 0px;
+            border-radius: 10px;
+            border-top: 1px solid rgba(41, 41, 41, 0.1019607843);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            button {
+                background-color: white;
+                color: black;
+                font-size: 13px;
+                border: 1px solid rgb(197, 195, 195);
+                padding: 6px 10px;
+                border-radius: 10px;
+
+                &:hover {
+                    background-color: #fefbfb;
+                }
+
+                i {
+                    color: #ff3333 !important;
+                    margin-right: 6px;
+                }
+            }
+        }
+    }
+}
+
+.onlyMobilebetShow {
+    display: none;
+}
+
+.depositPage {
+    background-color: #f5f4f1;
+
+    .showDepositPage {
+        margin: 10px 0px;
+        padding: 16px 16px;
+        margin-top: 0px !important;
+        padding-top: 0px !important;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        border-radius: 10px;
+        background-color: white;
+
+        .showImg {
+            max-width: 400px;
+            min-width: 300px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 2px solid green;
+            border-radius: 8px;
+            margin: 17px 0px;
+            padding: 8px;
+
+            img {
+                width: 300px;
+                border-radius: 8px;
+                height: 200px;
+                object-fit: fill;
+            }
+        }
+
+        .depositHead {
+            border-bottom: 1px solid #2929291a;
+            padding-bottom: 13px;
+            display: flex;
+            width: 100%;
+            flex-direction: row-reverse;
+            justify-content: center;
+            align-items: center;
+
+            h6 {
+                text-align: center;
+                color: #009e69;
+                margin: 0px;
+                font-size: 18px;
+                font-weight: 700;
+                margin-left: 8px;
+            }
+
+            i {
+                color: #009e69;
+                font-size: 18px;
+            }
+        }
+
+        .paymentShow {
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            border-top: 1px solid rgba(41, 41, 41, 0.1019607843);
+            width: 100%;
+            margin-top: 24px;
+            border-bottom: 1px solid rgba(41, 41, 41, 0.1019607843);
+            padding-bottom: 0px;
+
+            .razorPayLogo {
+                width: 100px;
+            }
+
+            .bankLogo {
+                width: 50px;
+
+            }
+
+            .googlePayLogo {
+                width: 68px;
+
+            }
+
+            .bheemLogo {
+                width: 38px;
+
+            }
+        }
+
+        .addDeposit {
+            background-color: #f5f4f1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 10px;
+            width: 100%;
+            margin: 10px 0px;
+            min-height: 200px;
+            max-width: 500px;
+            flex-direction: column;
+            border-radius: 10px;
+            height: 100%;
+
+            h6 {
+                text-align: center;
+            }
+
+            input::-webkit-outer-spin-button,
+            input::-webkit-inner-spin-button {
+                -webkit-appearance: none;
+                margin: 0;
+            }
+
+            /* Firefox */
+            input[type=number] {
+                -moz-appearance: textfield;
+            }
+
+            input {
+                border: 1px solid #e6e3de;
+                padding-left: 10px;
+                padding-right: 10px;
+                padding-bottom: 6px;
+                margin-top: 6px;
+                width: 100%;
+                border-radius: 4px;
+                padding-top: 6px;
+                background-color: #ffffff;
+
+                &:focus {
+                    border: 1px solid #424242;
+                    outline: none;
+                }
+            }
+
+            .errorMessage {
+                font-size: 13px;
+                margin-top: 6px;
+                color: red;
+            }
+
+            button {
+                background-color: #008f5f;
+                color: white;
+                border: 1px solid #008f5f;
+                padding: 8px 10px;
+                font-size: 13px;
+                border-radius: 6px;
+                margin-top: 10px;
+                width: 100%;
+
+                &:hover {
+                    background-color: #009e69;
+                }
+            }
+        }
+    }
+
+    .showDetails {
+        width: 100%;
+
+        .dipositStep {
+            margin-top: 13px;
+        }
+
+        .detailsBox {
+            h5 {
+                font-size: 17px;
+                color: #dc3545;
+            }
+
+            h6 {
+                text-align: left !important;
+                margin-left: 10px !important;
+                margin: 10px 0px;
+                padding-top: 6px;
+                font-size: 14px !important;
+
+                span {
+                    font-weight: bold;
+                    color: #2f3f8c;
+                }
+
+                i {
+                    color: #008f5f;
+                    cursor: pointer;
+                }
+            }
+
+            .showCode {
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+                align-items: center;
+
+                p {
+                    margin-bottom: 3px;
+                    font-size: 13px;
+                    font-weight: 500;
+                }
+
+                img {
+                    width: 200px;
+                    height: 200px;
+                }
+            }
+
+            ul {
+                list-style-type: auto;
+
+                li {
+                    font-size: 12px;
+
+                    span {
+                        color: red;
+                        font-size: 13px;
+                        font-weight: 600;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.withdrawPage {
+    background-color: #f5f4f1;
+    // height: calc(100vh - 56px);
+    padding: 13px;
+
+    .showWithdraw {
+        margin: 0px 10px;
+        padding: 16px 16px;
+        border-radius: 10px;
+        background-color: white;
+
+        .selectMethod {
+            display: flex;
+            justify-content: center;
+
+            button {
+                border-radius: 28px;
+                border: none;
+                font-size: 13px;
+                width: 50%;
+                margin: 0px 6px;
+                padding: 6px 10px;
+                border: 1px solid #7b756b;
+                color: #171716;
+                background-color: white;
+            }
+
+            .selectButton {
+                background-color: #008f5f;
+                color: white;
+            }
+        }
+
+        .showMethod {
+            border-top: 1px solid #2929291a;
+            margin: 6px 0px;
+            padding-top: 20px;
+
+            .minimumWith {
+                text-align: right;
+                width: 100%;
+                color: red;
+                font-size: 13px;
+                font-weight: 600;
+                display: flex;
+                justify-content: flex-end;
+            }
+
+            .formWith {
+                background-color: #f5f4f1;
+                padding: 10px;
+                margin: 10px 0px;
+                border-radius: 10px;
+
+                form {
+                    .inputShow {
+                        display: flex;
+                        flex-direction: column;
+
+                        label {
+                            color: #7b756b;
+                            font-size: 13px;
+                            padding: 4px 0px;
+                        }
+
+                        input::-webkit-outer-spin-button,
+                        input::-webkit-inner-spin-button {
+                            -webkit-appearance: none;
+                            margin: 0;
+                        }
+
+                        /* Firefox */
+                        input[type=number] {
+                            -moz-appearance: textfield;
+                        }
+
+                        input {
+                            border: 1px solid #e6e3de;
+                            padding-left: 10px;
+                            padding-right: 10px;
+                            padding-bottom: 6px;
+                            margin-top: 6px;
+                            width: 100%;
+                            border-radius: 4px;
+                            padding-top: 6px;
+                            background-color: #ffffff;
+
+                            &:focus {
+                                border: 1px solid #424242;
+                                outline: none;
+                            }
+                        }
+
+                        .errorMessage {
+                            font-size: 13px;
+                            margin-top: 6px;
+                            color: red;
+                        }
+                    }
+
+                    button {
+                        background-color: #008f5f;
+                        color: white;
+                        border: 1px solid #008f5f;
+                        padding: 8px 10px;
+                        font-size: 13px;
+                        border-radius: 6px;
+                        margin-top: 10px;
+                        width: 100%;
+
+                        &:hover {
+                            background-color: #009e69;
+                        }
+                    }
+                }
+            }
+
+            .showTable {
+                background-color: #f5f4f1;
+                padding: 10px;
+                margin: 10px 0px;
+                border-radius: 10px;
+                height: 100%;
+                max-height: 600px;
+                min-height: 400px;
+                position: relative;
+                overflow: scroll;
+                width: 100%;
+
+                .notData {
+                    position: absolute;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    width: 96%;
+                    height: 60%;
+                    /* overflow: hidden; */
+                    color: #212529;
+                    font-weight: 600;
+                    font-size: 14px;
+                }
+
+                table {
+                    border: 1px solid #e2e3e5;
+                    border-radius: 6px;
+                    width: 100%;
+
+                    th {
+                        background-color: white;
+                        color: green;
+                        font-size: 14px;
+                        font-weight: 700;
+                        margin-bottom: 6px;
+                        padding: 4px 8px;
+                        text-align: center;
+                        white-space: nowrap;
+                    }
+
+                    tbody {
+                        tr {
+                            border-bottom: 1px solid #e2e3e5;
+
+                            td {
+                                color: #4e5863;
+                                font-size: 14px;
+                                font-weight: 400;
+                                margin-bottom: 6px;
+                                padding: 8px;
+                                text-align: center;
+                                white-space: nowrap;
+                            }
+                        }
+
+                        .amountShow {
+                            color: red;
+                            font-weight: 600;
+                        }
+
+                        .pendingAmount {
+                            font-weight: 700;
+                            width: 80px;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            background-color: yellow;
+                            padding: 6px 10px;
+                            border-radius: 5px;
+                            color: #545454;
+                            font-size: 13px;
+                        }
+
+                        .failedAmount {
+                            font-weight: 700;
+                            width: 80px;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            background-color: red;
+                            padding: 6px 10px;
+                            border-radius: 5px;
+                            color: white;
+                            font-size: 13px;
+                        }
+
+                        .successAmount {
+                            font-weight: 700;
+                            width: 80px;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            background-color: rgb(12, 139, 12);
+                            padding: 6px 10px;
+                            border-radius: 5px;
+                            color: white;
+                            font-size: 13px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,8 @@
+/* Hide default arrows */
+.slick-prev,
+.slick-next {
+    display: none;
+
+}   
+
+    
