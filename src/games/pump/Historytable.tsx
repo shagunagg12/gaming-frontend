@@ -1,4 +1,4 @@
-export default function HistoryTable({history}:any){
+/*export default function HistoryTable({history}:any){
 
 return(
 
@@ -22,4 +22,4 @@ return(
 
 )
 
-}
+}*/

@@ -1,4 +1,4 @@
-import React from "react";
+/*import React from "react";
 
 interface Props {
   history: number[];
@@ -19,4 +19,4 @@ const History: React.FC<Props> = ({ history }) => {
   );
 };
 
-export default History;
+export default History;*/
