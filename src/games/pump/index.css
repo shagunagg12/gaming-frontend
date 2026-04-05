@@ -543,30 +543,203 @@
   background-color: #2f4553;
 }
 
-/* Responsive */
-@media (max-width: 768px) {
-  .pump-container {
-    flex-direction: column;
-    height: 100%;
-    min-height: 100vh;
-  }
 
+@media (max-width: 900px) {
   .pump-controls {
-    width: 100%;
-    order: 2;
-    /* Move controls to bottom on mobile */
+    width: 280px;
+    padding: 18px;
+    gap: 16px;
   }
 
-  .pump-game-area {
-    min-height: 400px;
-    order: 1;
-    height: 100%;
-    /* ✅ add this */
-    min-height: 100vh;
+  .pump-controls .action-btn {
+    padding: 13px;
+    font-size: 15px;
   }
 }
 
-/* ── Quick Info Tooltip ─────────────────────────────────────────────── */
+
+@media (max-width: 768px) {
+
+  .pump-container {
+    flex-direction: column;
+    height: auto;
+    min-height: 100svh;
+    min-height: 100vh;
+    border-radius: 0;
+    box-shadow: none;
+  }
+
+
+  .pump-game-area {
+    order: 1;
+    min-height: 0;
+    flex: 1 1 auto;
+  }
+
+  .balloon-scene {
+    min-height: 260px;
+    padding-bottom: 70px;
+
+  }
+
+
+  .balloon {
+    width: 140px;
+    height: 156px;
+  }
+
+  .balloon-shine {
+    width: 22px;
+    height: 38px;
+    top: 14px;
+    right: 22px;
+  }
+
+  .multiplier-text {
+    font-size: 24px;
+  }
+
+
+  .pump-body {
+    height: 55px;
+  }
+
+  .pump-handle {
+    height: 32px;
+  }
+
+
+  .pump-stage-box {
+    flex: 0 0 100px;
+    font-size: 14px;
+    padding: 8px 0;
+  }
+
+  .pump-stages-container {
+    gap: 6px;
+    padding: 70px 12px 16px;
+    margin-top: -55px;
+    margin-bottom: 16px;
+  }
+
+  .stage-tooltip {
+    display: none;
+  }
+
+
+  .pump-controls {
+    order: 2;
+    width: 100%;
+    padding: 16px;
+    gap: 12px;
+    border-top: 1px solid #1a2c38;
+  }
+
+  .mode-toggle {
+    border-radius: 16px;
+  }
+
+  .mode-toggle button {
+    padding: 7px 12px;
+    font-size: 13px;
+  }
+
+  .bet-input-wrapper input,
+  .select-wrapper select {
+    padding: 10px;
+    font-size: 13px;
+  }
+
+  .bet-actions button {
+    padding: 6px 10px;
+    font-size: 13px;
+  }
+
+  .action-btn {
+    padding: 13px;
+    font-size: 15px;
+  }
+
+  .profit-display label {
+    font-size: 13px;
+  }
+
+  .profit-value {
+    padding: 10px;
+    font-size: 14px;
+  }
+
+  /* ── History bar ── */
+  .pump-history {
+    padding: 8px 12px;
+  }
+
+  .history-pill {
+    padding: 4px 10px;
+    font-size: 11px;
+  }
+
+  /* ── Pop display ── */
+  .pop-multiplier {
+    font-size: 42px;
+  }
+
+  .pop-label {
+    font-size: 20px;
+  }
+
+
+  .cashout-box {
+    padding: 12px 18px;
+    min-width: 110px;
+  }
+
+  .cashout-multiplier {
+    font-size: 20px;
+  }
+
+  .cashout-profit {
+    font-size: 14px;
+  }
+}
+
+
+@media (max-width: 400px) {
+  .balloon {
+    width: 120px;
+    height: 134px;
+  }
+
+  .multiplier-text {
+    font-size: 20px;
+  }
+
+  .pump-stage-box {
+    flex: 0 0 86px;
+    font-size: 12px;
+    padding: 7px 0;
+  }
+
+  .pump-controls {
+    padding: 12px;
+    gap: 10px;
+  }
+
+  .action-btn {
+    padding: 11px;
+    font-size: 14px;
+  }
+
+  .profit-value {
+    font-size: 13px;
+  }
+
+  .balloon-scene {
+    min-height: 220px;
+  }
+}
+
+
 .stage-tooltip {
   position: absolute;
   bottom: calc(100% + 10px);
@@ -579,7 +752,7 @@
   width: max-content;
 }
 
-/* Slide-up + fade-in */
+
 @keyframes tooltip-fadein {
   from {
     opacity: 0;
@@ -606,7 +779,6 @@
   backdrop-filter: blur(6px);
 }
 
-/* Small caret pointing down toward stage box */
 .stage-tooltip-row::after {
   content: '';
   position: absolute;
